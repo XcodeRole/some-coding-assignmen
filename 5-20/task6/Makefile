@@ -1,6 +1,6 @@
 TARGET=task6
 
-SRC=$(TARGET).cpp
+SRC=$(shell find . -name \*.cpp) #| sed 's/.cpp/.o/')
 
 OBJECTS = $(SRC:.cpp=.o)
 

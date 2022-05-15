@@ -4,12 +4,28 @@ using namespace std;
 
 #define PI acos(-1)
 
-typedef enum relation{
+//Use enum types to represent relationships
+enum class relation{
     interaction,
     tangency,
     separation,
     inside
-}relation;
+};
+
+ostream& operator << (ostream& out,relation r){
+    switch(r)
+    {
+        case relation::interaction:
+            out<<"interaction";
+        case relation::tangency:
+            out<<"tangency";
+        case relation::separation:
+            out<<"separation";
+        case relation::inside:
+            out<<"inside";
+    }
+    return out;
+}
 
 class Circle{
     public:
@@ -24,6 +40,7 @@ class Circle{
     Circle operator + (const Circle& c);
 
 };
+//calculate area of a circle
 double Circle::cal_area() const {
     return PI*pow(this->radius,2);
 }
@@ -46,16 +63,16 @@ relation judgeRelation(Circle c1,Circle c2){
     double r_distance=c1.radius+c2.radius;
     cout<<x_distance<<" "<<y_distance<<" "<<distance<<" "<<r_distance<<endl;
     if(distance==r_distance){
-        return tangency;
+        return relation::tangency;
     }
     else if(distance<r_distance){
         if(c1.radius>distance||c2.radius>distance)
-            return inside;
+            return relation::inside;
         else
-            return interaction;
+            return relation::interaction;
     }
     else 
-        return separation;
+        return relation::separation;
 }
 
 int main(){
@@ -70,5 +87,4 @@ int main(){
     relation rel=judgeRelation(c1,c2);
     cout<<"There relationship is "<<rel<<endl;
     Circle c3=c1+c2;
-
 }

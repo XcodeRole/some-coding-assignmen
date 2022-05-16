@@ -4,7 +4,15 @@ The mathematical basis behind line fitting is shown below.You have a set of data
 ## Straight line
 The equation for a straight line is:y=ax +b.Suppose that we have n points of(x,y)values from the text file,the values of a and b for the best fit line that is the best approximation of the given set of data points can be obtained from the following equation:
 
-....
+....omit....
 
 # run it
-command : make && ./task6
+command : make && ./task6 < pre_input.txt
+# Notes
+pre_input.txt is the debug case file used to replace (or simulate) standard input
+If you want to input manually, please remove "< pre_input.txt" from the command line and replace it with keyboard input follow the prompts output.
+
+# pre_input.txt
+first line is the number of points you want enter
+second to twelfth is those points you will enter next
+thirteenth is the point you want delete from the file

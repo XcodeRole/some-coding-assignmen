@@ -17,12 +17,18 @@ ostream& operator << (ostream& out,relation r){
     {
         case relation::interaction:
             out<<"interaction";
+            break;
         case relation::tangency:
             out<<"tangency";
+            break;
         case relation::separation:
             out<<"separation";
+            break;
         case relation::inside:
             out<<"inside";
+            break;
+        default:
+            out<<"errs";
     }
     return out;
 }
@@ -44,7 +50,7 @@ class Circle{
 double Circle::cal_area() const {
     return PI*pow(this->radius,2);
 }
-
+//override + operator of Circle
 Circle Circle::operator+(const Circle& b){
     double a_area=this->cal_area();
     double b_area=b.cal_area();
@@ -60,19 +66,20 @@ relation judgeRelation(Circle c1,Circle c2){
     double x_distance=abs(c1.x-c2.x);
     double y_distance=abs(c1.y-c2.y);
     double distance=pow(pow(x_distance,2)+pow(y_distance,2),0.5);
-    double r_distance=c1.radius+c2.radius;
-    cout<<x_distance<<" "<<y_distance<<" "<<distance<<" "<<r_distance<<endl;
-    if(distance==r_distance){
+    //r1 add r1
+    double r_a_distance=c1.radius+c2.radius;
+    //r1 sub r2 
+    double r_s_distance=fabs(c1.radius-c2.radius);
+    // debug print
+    // cout<<x_distance<<" "<<y_distance<<" "<<distance<<" "<<r_a_distance<<" "<<r_s_distance<<endl;
+    if(fabs(distance-r_a_distance)<1e-8)
         return relation::tangency;
-    }
-    else if(distance<r_distance){
-        if(c1.radius>distance||c2.radius>distance)
-            return relation::inside;
-        else
-            return relation::interaction;
-    }
-    else 
+    else if(distance>r_a_distance)
         return relation::separation;
+    else if(distance>r_s_distance&&distance<r_a_distance)
+        return relation::interaction;
+    else
+        return relation::inside;
 }
 
 int main(){

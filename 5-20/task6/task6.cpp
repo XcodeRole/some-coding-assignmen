@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     string fdstring="points.txt";
     int num;
-    cout<<"Please enter the number of coordinates you want input next."<<endl;
+    cout<<"Please enter the number of coordinates you want input next:"<<endl;
     cin>>num;
     FileOp::board2file(num,fdstring);
     vector<coordinate> points=FileOp::file2attr(fdstring);
@@ -26,8 +26,9 @@ int main(){
     line.cal_distance();
     coordinate worst_point=line.find_worst_point();
     cout<<"The worst point that has a maximal distance to the best fit line in all the points: ("<<worst_point.x<<" "<<worst_point.y<<")"<<endl;
-    cout<<"Please enter a point and we will delete it from the file:";
-    cout<<endl;
+    double SE=line.cal_SE();
+    cout<<"the standard error for all the points: "<<SE<<endl;
+    cout<<"Please enter a point and we will delete it from the file:"<<endl;
     coordinate del_p;
     cin>>del_p.x>>del_p.y;
     if (FileOp::del_point(fdstring,del_p)){

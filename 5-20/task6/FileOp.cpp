@@ -56,7 +56,8 @@ bool FileOp::del_point(string filename,coordinate cor){
     //=to_string(cor.x)+" "+to_string(cor.y)+"\n";
     ostr<<cor.x<<" "<<cor.y<<"\n";
     string del_str=ostr.str();
-    cout<<del_str;
+    //debug print
+    // cout<<del_str;
     //find position
     int pos = str_all_points.find(del_str);
     //delete substring

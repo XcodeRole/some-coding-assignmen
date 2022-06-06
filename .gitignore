@@ -2,3 +2,6 @@
 *.zip
 *.txt
 *.o
+*.csv
+__pycache__
+sitepackage

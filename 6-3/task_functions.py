@@ -1,10 +1,20 @@
 
 
 def print_main_menu(menu):
+    """
+    :param menu: which to print
+    :return: just print ,don't have return
+    """
+    print("==========================")
+    print("What would you like to do?")
     for key,value in menu.items():
-        print(str(key)+":"+str(value))
+        print(str(key)+" - "+str(value))
 
 def get_written_date(date_list):
+    """
+    :param date_list: you have to split date with "/"
+    :return: return the format date
+    """
     month_names = {
         1: "January",
         2: "February",
@@ -71,7 +81,7 @@ def get_selection(action, suboptions, to_upper=True, go_back=False):
         if go_back and selection.upper() == 'M':
             return 'M'
     print(f"You selected |{selection}| to",
-          f"{action.lower()} | {suboptions[selection].lower()} |.")
+          f"{action.lower()} |{suboptions[selection].lower()}|.")
     return selection
 
 
@@ -100,18 +110,17 @@ def print_task(task, priority_map, name_only=False):
     Helper functions:
     - get_written_date() to display the 'duedate' field
     """
-    for key,value in task.items():
-        if name_only:
-            if key=="priority":
-                print(str(key)+":"+str(priority_map[value]))
-            else:
-                print(str(key)+":"+str(value))
-        else:
-            if key=="duedate":
-                date_str=str(get_written_date(value.split("/")))
-                print(str(key)+":"+date_str)
-            else:
-                print(str(key) + ":" + str(value))
+    if name_only:
+        print(task["name"])
+    else:
+        print(task["name"])
+        info=task["info"]
+        print(f"  * {info}")
+        format_date=get_written_date(task["duedate"].split("/"))
+        real_prio=priority_map[task["priority"]]
+        print(f"  * Due: {format_date}  (Priority: {real_prio})")
+        isdone=task["done"]
+        print(f"  * Completed? {isdone}")
 
 
 
@@ -304,6 +313,7 @@ def is_valid_index(idx, in_list, start_idx=0):
     integer value, if int(idx) is < start_idx,
     or if it exceeds the size of in_list.
     """
+    idx=str(idx)
     return idx.isdigit() and int(idx)>=start_idx and int(idx)>0 and int(idx) < len(in_list)
 
 
@@ -360,6 +370,7 @@ field_info, start_idx = 0):
         - is_valid_date()
         - is_valid_completion()
         """
+    idx=int(idx)
     task=info_list[idx]
     if len(info_list)==0:
         return 0
@@ -410,14 +421,15 @@ return None.
     Helper functions:
     - is_valid_index()
     """
+    idx=str(idx)
     if len(in_list)==0:
         return 0
     if not idx.isdigit():
         return None
     if not is_valid_index(idx,in_list,start_idx):
         return -1
-    ret=in_list[str(idx)]
-    in_list.pop(str(idx))
+    ret=in_list[int(idx)]
+    in_list.pop(int(idx))
     return ret
 
 

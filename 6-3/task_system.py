@@ -82,7 +82,7 @@ if __name__=='__main__':
             continue_action = 'y'
             while continue_action == 'y':
                 print("::: Enter each required field, separated by commas.")
-                print("::: name, info, priority, MM/DD/YYYY, is task done? (yes / no)")
+                print("::: name, info, priority, MM/DD/YYYY, is task done? (yes/no)")
                 raw_str = input("> ")  # TODO: get and process the data into a list
                 str2list = raw_str.split()
                 result = get_new_task(str2list,priority_scale)  # TODO: attempt to create a new task

@@ -94,6 +94,9 @@ class StudentRecord(object):
         self.id = st_number
         self.midterm = None
         self.labs = []
+        #add
+        self.final_exam = None
+        self.assignments=[]
 
 
     def calculate(self):
@@ -103,8 +106,10 @@ class StudentRecord(object):
         Return:
             The final grade.
         """
-        return round(self.midterm.contribution()
-                     + sum([b.contribution() for b in self.labs]))
+        # modify
+        return round(self.midterm.contribution()+self.final_exam.contribution()
+                     + sum([b.contribution() for b in self.labs])
+                     + sum([a.contribution() for a in self.assignments]) )
 
     def display(self):
         """
@@ -122,6 +127,13 @@ class StudentRecord(object):
 
         print('\tLabs:', end=" ")
         for g in self.labs:
+            if g.weight == 0:
+                print('[' + str(g) + ']', end=' ')
+            else:
+                print(str(g), end=' ')
+        #add
+        print('\tFinal_exam:', str(self.final_exam))
+        for g in self.assignments:
             if g.weight == 0:
                 print('[' + str(g) + ']', end=' ')
             else:
@@ -170,6 +182,10 @@ def read_student_record_file(filename):
 
         for g,o,w in zip(labs,lab_out_of,lab_weights):
             student.labs.append(GradeItem(w,g,o))
+        for g,o,w in zip(assignments,assignments_out_of,assignment_weights):
+            student.assignments.append(GradeItem(w,g,o))
+        
+        student.final_exam = GradeItem(final_weight,int(student_line[24]),final_out_of)
 
         student.midterm = GradeItem(mt_weight,int(student_line[23]),mt_out_of)
 

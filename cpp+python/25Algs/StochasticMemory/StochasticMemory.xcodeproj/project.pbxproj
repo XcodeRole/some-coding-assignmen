@@ -1,0 +1,86 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0E4644681BF2087C005DB47A /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		0E4644691BF2087C005DB47A /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		0E46446A1BF2089A005DB47A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0E46446B1BF2090C005DB47A /* gene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gene.cpp; sourceTree = "<group>"; };
+		0E46446D1BF20938005DB47A /* gene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gene.h; sourceTree = "<group>"; };
+		0E46446E1BFA1F8E005DB47A /* batch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = batch.cpp; sourceTree = "<group>"; };
+		0E4644711BFAFFE8005DB47A /* gene2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gene2.cpp; sourceTree = "<group>"; };
+		0E4644721BFAFFE8005DB47A /* gene2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gene2.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0E4644611BF20844005DB47A = {
+			isa = PBXGroup;
+			children = (
+				0E46446E1BFA1F8E005DB47A /* batch.cpp */,
+				0E4644691BF2087C005DB47A /* makefile */,
+				0E46446A1BF2089A005DB47A /* main.cpp */,
+				0E4644681BF2087C005DB47A /* defs.h */,
+				0E46446B1BF2090C005DB47A /* gene.cpp */,
+				0E46446D1BF20938005DB47A /* gene.h */,
+				0E4644711BFAFFE8005DB47A /* gene2.cpp */,
+				0E4644721BFAFFE8005DB47A /* gene2.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		0E4644621BF20844005DB47A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 0E4644651BF20844005DB47A /* Build configuration list for PBXProject "StochasticMemory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0E4644611BF20844005DB47A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0E4644661BF20844005DB47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0E4644671BF20844005DB47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4644651BF20844005DB47A /* Build configuration list for PBXProject "StochasticMemory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4644661BF20844005DB47A /* Debug */,
+				0E4644671BF20844005DB47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E4644621BF20844005DB47A /* Project object */;
+}

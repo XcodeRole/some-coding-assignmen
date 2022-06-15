@@ -1,0 +1,216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0CEFB1E2203766A400BAC082 /* CompStuff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CompStuff.cpp; path = ../CompStuff.cpp; sourceTree = "<group>"; };
+		0E46445F1BF0C876005DB47A /* Pavlov.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Pavlov.cpp; path = ../Pavlov.cpp; sourceTree = "<group>"; };
+		0E4644601BF0C884005DB47A /* Pavlov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Pavlov.h; path = ../Pavlov.h; sourceTree = "<group>"; };
+		0E46446F1BFA20DF005DB47A /* Memory1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Memory1.cpp; path = ../Memory1.cpp; sourceTree = "<group>"; };
+		0E4644701BFA20DF005DB47A /* Memory1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Memory1.h; path = ../Memory1.h; sourceTree = "<group>"; };
+		0E4644731BFB0E5C005DB47A /* Memory2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Memory2.cpp; path = ../Memory2.cpp; sourceTree = "<group>"; };
+		0E4644741BFB0E5C005DB47A /* Memory2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Memory2.h; path = ../Memory2.h; sourceTree = "<group>"; };
+		0E9A4BA51B1AF4370004D6BA /* CJAL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CJAL.cpp; path = ../CJAL.cpp; sourceTree = "<group>"; };
+		0E9A4BA61B1AF4370004D6BA /* CJAL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJAL.h; path = ../CJAL.h; sourceTree = "<group>"; };
+		0E9A4BA71B1AF4370004D6BA /* Exp3_act.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Exp3_act.cpp; path = ../Exp3_act.cpp; sourceTree = "<group>"; };
+		0E9A4BA81B1AF4370004D6BA /* Exp3_act.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Exp3_act.h; path = ../Exp3_act.h; sourceTree = "<group>"; };
+		0E9A4BA91B1AF4370004D6BA /* fp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fp.cpp; path = ../fp.cpp; sourceTree = "<group>"; };
+		0E9A4BAA1B1AF4370004D6BA /* fp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fp.h; path = ../fp.h; sourceTree = "<group>"; };
+		0E9A4BAB1B1AF4370004D6BA /* gigawolf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gigawolf.cpp; path = ../gigawolf.cpp; sourceTree = "<group>"; };
+		0E9A4BAC1B1AF4370004D6BA /* gigawolf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gigawolf.h; path = ../gigawolf.h; sourceTree = "<group>"; };
+		0E9A4BAD1B1AF4370004D6BA /* HedgeWMA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HedgeWMA.cpp; path = ../HedgeWMA.cpp; sourceTree = "<group>"; };
+		0E9A4BAE1B1AF4370004D6BA /* HedgeWMA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HedgeWMA.h; path = ../HedgeWMA.h; sourceTree = "<group>"; };
+		0E9A4BAF1B1AF4370004D6BA /* SAlg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SAlg.cpp; path = ../SAlg.cpp; sourceTree = "<group>"; };
+		0E9A4BB01B1AF4370004D6BA /* SAlg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAlg.h; path = ../SAlg.h; sourceTree = "<group>"; };
+		0E9A4BB11B1AF4370004D6BA /* sfp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sfp.cpp; path = ../sfp.cpp; sourceTree = "<group>"; };
+		0E9A4BB21B1AF4370004D6BA /* sfp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sfp.h; path = ../sfp.h; sourceTree = "<group>"; };
+		0E9A4BB31B1AF44E0004D6BA /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = makefile; path = ../makefile; sourceTree = "<group>"; };
+		0E9A4BB41B2626380004D6BA /* DeepQ.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DeepQ.cpp; path = ../DeepQ.cpp; sourceTree = "<group>"; };
+		0E9A4BB51B26265A0004D6BA /* DeepQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeepQ.h; path = ../DeepQ.h; sourceTree = "<group>"; };
+		0E9A4BB61B2627D40004D6BA /* MySocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MySocket.cpp; path = ../MySocket.cpp; sourceTree = "<group>"; };
+		0E9A4BB71B2627D40004D6BA /* MySocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MySocket.h; path = ../MySocket.h; sourceTree = "<group>"; };
+		840D9F43173D91CE00A8C767 /* Manipulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Manipulator.h; path = ../Manipulator.h; sourceTree = "<group>"; };
+		840D9F45173D92E200A8C767 /* Manipulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Manipulator.cpp; path = ../Manipulator.cpp; sourceTree = "<group>"; };
+		84806DF4161B012300D5E2A8 /* a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = a.cpp; path = ../a.cpp; sourceTree = "<group>"; };
+		84806DF5161B012300D5E2A8 /* a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = a.h; path = ../a.h; sourceTree = "<group>"; };
+		84806E03161B012300D5E2A8 /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = defs.h; path = ../defs.h; sourceTree = "<group>"; };
+		84806E04161B012300D5E2A8 /* eee.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = eee.cpp; path = ../eee.cpp; sourceTree = "<group>"; };
+		84806E05161B012300D5E2A8 /* eee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = eee.h; path = ../eee.h; sourceTree = "<group>"; };
+		84806E08161B012300D5E2A8 /* Exp3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Exp3.cpp; path = ../Exp3.cpp; sourceTree = "<group>"; };
+		84806E09161B012300D5E2A8 /* Exp3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Exp3.h; path = ../Exp3.h; sourceTree = "<group>"; };
+		84806E0A161B012300D5E2A8 /* expertLearner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = expertLearner.cpp; path = ../expertLearner.cpp; sourceTree = "<group>"; };
+		84806E0B161B012300D5E2A8 /* expertLearner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = expertLearner.h; path = ../expertLearner.h; sourceTree = "<group>"; };
+		84806E0E161B012300D5E2A8 /* iModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = iModel.cpp; path = ../iModel.cpp; sourceTree = "<group>"; };
+		84806E0F161B012300D5E2A8 /* iModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iModel.h; path = ../iModel.h; sourceTree = "<group>"; };
+		84806E10161B012300D5E2A8 /* Littman.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Littman.cpp; path = ../Littman.cpp; sourceTree = "<group>"; };
+		84806E11161B012300D5E2A8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		84806E12161B012300D5E2A8 /* Mala.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Mala.cpp; path = ../Mala.cpp; sourceTree = "<group>"; };
+		84806E13161B012300D5E2A8 /* Mala.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mala.h; path = ../Mala.h; sourceTree = "<group>"; };
+		84806E14161B012300D5E2A8 /* minimaxLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = minimaxLog.cpp; path = ../minimaxLog.cpp; sourceTree = "<group>"; };
+		84806E15161B012300D5E2A8 /* minimaxLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = minimaxLog.h; path = ../minimaxLog.h; sourceTree = "<group>"; };
+		84806E16161B012300D5E2A8 /* REexpert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = REexpert.cpp; path = ../REexpert.cpp; sourceTree = "<group>"; };
+		84806E17161B012300D5E2A8 /* REexpert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = REexpert.h; path = ../REexpert.h; sourceTree = "<group>"; };
+		84806E1A161B012300D5E2A8 /* Rndm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Rndm.cpp; path = ../Rndm.cpp; sourceTree = "<group>"; };
+		84806E1B161B012300D5E2A8 /* Rndm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Rndm.h; path = ../Rndm.h; sourceTree = "<group>"; };
+		84806E20161B012300D5E2A8 /* strategyPair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = strategyPair.cpp; path = ../strategyPair.cpp; sourceTree = "<group>"; };
+		84806E21161B012300D5E2A8 /* strategyPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strategyPair.h; path = ../strategyPair.h; sourceTree = "<group>"; };
+		84806E22161B012300D5E2A8 /* ucb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ucb.cpp; path = ../ucb.cpp; sourceTree = "<group>"; };
+		84806E23161B012300D5E2A8 /* ucb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ucb.h; path = ../ucb.h; sourceTree = "<group>"; };
+		84806E28161B176C00D5E2A8 /* Rmax.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Rmax.cpp; path = ../Rmax.cpp; sourceTree = "<group>"; };
+		84806E29161B176C00D5E2A8 /* Rmax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Rmax.h; path = ../Rmax.h; sourceTree = "<group>"; };
+		84806E2A161B194800D5E2A8 /* jefe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jefe.h; path = ../jefe.h; sourceTree = "<group>"; };
+		84806E2B161B1A6E00D5E2A8 /* jefe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jefe.cpp; path = ../jefe.cpp; sourceTree = "<group>"; };
+		84806E2C161B72F700D5E2A8 /* jefe++.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "jefe++.cpp"; path = "../jefe++.cpp"; sourceTree = "<group>"; };
+		84806E2D161B72F700D5E2A8 /* jefe++.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "jefe++.h"; path = "../jefe++.h"; sourceTree = "<group>"; };
+		84806E301620A84500D5E2A8 /* Godfather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Godfather.h; path = ../Godfather.h; sourceTree = "<group>"; };
+		84806E311620C8AB00D5E2A8 /* Godfather.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Godfather.cpp; path = ../Godfather.cpp; sourceTree = "<group>"; };
+		84806E3516215BCF00D5E2A8 /* Bully.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bully.cpp; path = ../Bully.cpp; sourceTree = "<group>"; };
+		84806E3616215BCF00D5E2A8 /* Bully.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bully.h; path = ../Bully.h; sourceTree = "<group>"; };
+		84806E371621ED9100D5E2A8 /* WoLF.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WoLF.cpp; path = ../WoLF.cpp; sourceTree = "<group>"; };
+		84806E381621ED9100D5E2A8 /* WoLF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WoLF.h; path = ../WoLF.h; sourceTree = "<group>"; };
+		84806E391621F9EA00D5E2A8 /* QLearner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = QLearner.cpp; path = ../QLearner.cpp; sourceTree = "<group>"; };
+		84806E3A1621F9EA00D5E2A8 /* QLearner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QLearner.h; path = ../QLearner.h; sourceTree = "<group>"; };
+		84806E3E1622ECE800D5E2A8 /* playStrat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = playStrat.h; path = ../playStrat.h; sourceTree = "<group>"; };
+		84806E3F1622EDF500D5E2A8 /* playStrat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = playStrat.cpp; path = ../playStrat.cpp; sourceTree = "<group>"; };
+		84BD550216AFCCBB0097D506 /* filePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filePlayer.h; path = ../filePlayer.h; sourceTree = "<group>"; };
+		84BD550416AFCD620097D506 /* filePlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filePlayer.cpp; path = ../filePlayer.cpp; sourceTree = "<group>"; };
+		84C022C6172FD8A900A6FBCA /* MQubed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MQubed.cpp; path = ../MQubed.cpp; sourceTree = "<group>"; };
+		84C022C7172FD8A900A6FBCA /* MQubed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MQubed.h; path = ../MQubed.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		84806DEA161B007B00D5E2A8 = {
+			isa = PBXGroup;
+			children = (
+				0E9A4BB31B1AF44E0004D6BA /* makefile */,
+				84806E11161B012300D5E2A8 /* main.cpp */,
+				84806E03161B012300D5E2A8 /* defs.h */,
+				84806E12161B012300D5E2A8 /* Mala.cpp */,
+				84806E13161B012300D5E2A8 /* Mala.h */,
+				0E46445F1BF0C876005DB47A /* Pavlov.cpp */,
+				0E4644601BF0C884005DB47A /* Pavlov.h */,
+				0E46446F1BFA20DF005DB47A /* Memory1.cpp */,
+				0E4644701BFA20DF005DB47A /* Memory1.h */,
+				0E4644731BFB0E5C005DB47A /* Memory2.cpp */,
+				0E4644741BFB0E5C005DB47A /* Memory2.h */,
+				84806E0A161B012300D5E2A8 /* expertLearner.cpp */,
+				84806E0B161B012300D5E2A8 /* expertLearner.h */,
+				84806DF4161B012300D5E2A8 /* a.cpp */,
+				84806DF5161B012300D5E2A8 /* a.h */,
+				84806E04161B012300D5E2A8 /* eee.cpp */,
+				84806E05161B012300D5E2A8 /* eee.h */,
+				84806E08161B012300D5E2A8 /* Exp3.cpp */,
+				84806E09161B012300D5E2A8 /* Exp3.h */,
+				84806E22161B012300D5E2A8 /* ucb.cpp */,
+				84806E23161B012300D5E2A8 /* ucb.h */,
+				84806E10161B012300D5E2A8 /* Littman.cpp */,
+				0CEFB1E2203766A400BAC082 /* CompStuff.cpp */,
+				84806E14161B012300D5E2A8 /* minimaxLog.cpp */,
+				84806E15161B012300D5E2A8 /* minimaxLog.h */,
+				84806E2C161B72F700D5E2A8 /* jefe++.cpp */,
+				84806E2D161B72F700D5E2A8 /* jefe++.h */,
+				84806E2B161B1A6E00D5E2A8 /* jefe.cpp */,
+				84806E2A161B194800D5E2A8 /* jefe.h */,
+				84806E16161B012300D5E2A8 /* REexpert.cpp */,
+				84806E17161B012300D5E2A8 /* REexpert.h */,
+				84806E20161B012300D5E2A8 /* strategyPair.cpp */,
+				84806E21161B012300D5E2A8 /* strategyPair.h */,
+				84806E0E161B012300D5E2A8 /* iModel.cpp */,
+				84806E0F161B012300D5E2A8 /* iModel.h */,
+				84806E1A161B012300D5E2A8 /* Rndm.cpp */,
+				84806E1B161B012300D5E2A8 /* Rndm.h */,
+				84806E28161B176C00D5E2A8 /* Rmax.cpp */,
+				84806E29161B176C00D5E2A8 /* Rmax.h */,
+				84806E371621ED9100D5E2A8 /* WoLF.cpp */,
+				84806E381621ED9100D5E2A8 /* WoLF.h */,
+				84806E391621F9EA00D5E2A8 /* QLearner.cpp */,
+				84806E3A1621F9EA00D5E2A8 /* QLearner.h */,
+				84806E3516215BCF00D5E2A8 /* Bully.cpp */,
+				84806E3616215BCF00D5E2A8 /* Bully.h */,
+				84806E311620C8AB00D5E2A8 /* Godfather.cpp */,
+				84806E301620A84500D5E2A8 /* Godfather.h */,
+				84806E3F1622EDF500D5E2A8 /* playStrat.cpp */,
+				84806E3E1622ECE800D5E2A8 /* playStrat.h */,
+				84BD550416AFCD620097D506 /* filePlayer.cpp */,
+				84BD550216AFCCBB0097D506 /* filePlayer.h */,
+				84C022C6172FD8A900A6FBCA /* MQubed.cpp */,
+				84C022C7172FD8A900A6FBCA /* MQubed.h */,
+				840D9F45173D92E200A8C767 /* Manipulator.cpp */,
+				840D9F43173D91CE00A8C767 /* Manipulator.h */,
+				0E9A4BA51B1AF4370004D6BA /* CJAL.cpp */,
+				0E9A4BA61B1AF4370004D6BA /* CJAL.h */,
+				0E9A4BA91B1AF4370004D6BA /* fp.cpp */,
+				0E9A4BAA1B1AF4370004D6BA /* fp.h */,
+				0E9A4BA71B1AF4370004D6BA /* Exp3_act.cpp */,
+				0E9A4BA81B1AF4370004D6BA /* Exp3_act.h */,
+				0E9A4BAB1B1AF4370004D6BA /* gigawolf.cpp */,
+				0E9A4BAC1B1AF4370004D6BA /* gigawolf.h */,
+				0E9A4BAD1B1AF4370004D6BA /* HedgeWMA.cpp */,
+				0E9A4BAE1B1AF4370004D6BA /* HedgeWMA.h */,
+				0E9A4BAF1B1AF4370004D6BA /* SAlg.cpp */,
+				0E9A4BB01B1AF4370004D6BA /* SAlg.h */,
+				0E9A4BB11B1AF4370004D6BA /* sfp.cpp */,
+				0E9A4BB21B1AF4370004D6BA /* sfp.h */,
+				0E9A4BB41B2626380004D6BA /* DeepQ.cpp */,
+				0E9A4BB51B26265A0004D6BA /* DeepQ.h */,
+				0E9A4BB61B2627D40004D6BA /* MySocket.cpp */,
+				0E9A4BB71B2627D40004D6BA /* MySocket.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		84806DEC161B007B00D5E2A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 84806DEF161B007B00D5E2A8 /* Build configuration list for PBXProject "experts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84806DEA161B007B00D5E2A8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		84806DF1161B007B00D5E2A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		84806DF2161B007B00D5E2A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84806DEF161B007B00D5E2A8 /* Build configuration list for PBXProject "experts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84806DF1161B007B00D5E2A8 /* Debug */,
+				84806DF2161B007B00D5E2A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84806DEC161B007B00D5E2A8 /* Project object */;
+}

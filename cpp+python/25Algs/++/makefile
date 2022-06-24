@@ -3,7 +3,7 @@ cpp_FILES = main.cpp iModel.cpp minimaxLog.cpp Mala.cpp expertLearner.cpp a.cpp 
 c_FILES =
 CC = g++
 
-CFLAGS = -O -g
+CFLAGS = -O -g -std=c++11 -DMYSOCKET_H
 LIBs = 
 
 OBJECTS = $(c_FILES:.c=.o) $(cpp_FILES:.cpp=.o)
@@ -20,7 +20,7 @@ $(PROGRAM): $(OBJECTS)
 	$(CC) $(FLAGS) $(CFLAGS) -o $@ $(INCLUDES) $(OBJECTS) $(LIBS)
 
 clean:
-	rm *.o
+	rm -rf *.o game
 
 rebuild: clean
 	make

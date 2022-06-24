@@ -99,7 +99,7 @@ void algOmega::updateImBR() {
 			imBR->thars->pi[i][j] = (double)(currentImKappa[i][j]) / (double)sum;		
 	}
 	
-	imBR->ares->bestResponse(M, imBR->thars);
+	imBR->ares->bestResponse(M, imBR->thars,me);
 //	imBR->thars->valuesGivenStrategyPair(M, ares);
 /*	
 	bool verbose = false;

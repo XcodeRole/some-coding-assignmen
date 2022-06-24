@@ -19,12 +19,13 @@
 #include "fp.h"
 #include "gigawolf.h"
 #include "HedgeWMA.h"
-#include "Salg.h"
+#include "SAlg.h"
 #include "sfp.h"
 #include "DeepQ.h"
 #include "Pavlov.h"
 #include "Memory1.h"
 #include "Memory2.h"
+using namespace std;
 
 void runGame(double ***M, int A[NUM_PLAYERS], int len, int indy);
 double ***readPayoffMatrixFromFile(int _A[2], const char *game);

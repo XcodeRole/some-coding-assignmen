@@ -1,15 +1,12 @@
-#ifndef MYSOCKET_H
-#define MYSOCKET_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
-
-
 #include <string.h>
 #include <time.h>
 
-int betriebssystem = 1;
+#ifndef MYSOCKET_H
+#define MYSOCKET_H
+// int betriebssystem = 1;
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <iphlpapi.h>
@@ -22,7 +19,7 @@ int betriebssystem = 1;
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <netdb.h>
-int betriebssystem = 2;
+// int betriebssystem = 2;
 #endif
 
 #define SOCKET_ERROR -1

@@ -1,0 +1,9 @@
+running build_ext
+building 'algOmega' extension
+creating build
+creating build/temp.linux-x86_64-3.8
+gcc -pthread -B /home/gouser/anaconda3/envs/zff/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I. -I/home/gouser/anaconda3/envs/zff/include/python3.8 -c algOmega.cpp -o build/temp.linux-x86_64-3.8/algOmega.o
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+creating build/lib.linux-x86_64-3.8
+g++ -pthread -B /home/gouser/anaconda3/envs/zff/compiler_compat -Wl,--sysroot=/ -pthread -shared -B /home/gouser/anaconda3/envs/zff/compiler_compat -L/home/gouser/anaconda3/envs/zff/lib -Wl,-rpath=/home/gouser/anaconda3/envs/zff/lib -Wl,--no-as-needed -Wl,--sysroot=/ build/temp.linux-x86_64-3.8/algOmega.o -o build/lib.linux-x86_64-3.8/algOmega.cpython-38-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-3.8/algOmega.cpython-38-x86_64-linux-gnu.so -> 

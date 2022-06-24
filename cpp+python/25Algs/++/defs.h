@@ -7,6 +7,7 @@
 #include <time.h>
 #include <math.h>
 #include <unistd.h>
+#include <cstring>
 
 typedef struct Cell {
 	double r1, r2;

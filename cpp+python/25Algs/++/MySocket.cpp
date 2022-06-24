@@ -1,7 +1,7 @@
 #include "MySocket.h"
 #include "errno.h"
 #include <unistd.h>
-
+#include <stdio.h>
 #define MAX_BUFFER		1024
 
 MySocket::MySocket(int port) {

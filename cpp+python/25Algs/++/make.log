@@ -1,0 +1,363 @@
+g++  -O -g -std=c++11 -DMYSOCKET_H main.cpp -c 
+main.cpp: In function ‘double*** readPayoffMatrixFromFile(int*, const char*)’:
+main.cpp:486:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  486 |  fscanf(fp, "%i", &(_A[0]));
+      |  ~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:487:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  487 |  fscanf(fp, "%i", &(_A[0]));
+      |  ~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:488:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  488 |  fscanf(fp, "%i", &(_A[1]));
+      |  ~~~~~~^~~~~~~~~~~~~~~~~~~~
+main.cpp:500:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  500 |    fscanf(fp, "%lf %lf", &(_M[0][j][i]), &(_M[1][j][i]));
+      |    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In function ‘void recordSummaryResults(double (*)[4], int, int)’:
+main.cpp:207:34: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1013 [-Wformat-overflow=]
+  207 |     sprintf(fnombre, "../results/%s_%s_%s_%i.txt", game, agent0, agent1, indy);
+      |                                  ^~                ~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from main.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 20 and 3099 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In function ‘void runGame(double***, int*, int, int)’:
+main.cpp:130:24: warning: ‘%s’ directive writing up to 1023 bytes into a region of size between 0 and 1023 [-Wformat-overflow=]
+  130 |     sprintf(gamer, "%s_%s_%s_%i", game, agent0, agent1, indy);
+      |                        ^~               ~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from main.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 5 and 3084 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:157:26: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1017 [-Wformat-overflow=]
+  157 |     sprintf(buf, "../log/%s_%s_%s_%i.txt", game, agent0, agent1, indy);
+      |                          ^~                ~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from main.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 16 and 3095 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H iModel.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H minimaxLog.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Mala.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H expertLearner.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H a.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Exp3.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H eee.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H ucb.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Rmax.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H MySocket.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Littman.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H CompStuff.cpp -c 
+CompStuff.cpp: In function ‘double NB(int)’:
+CompStuff.cpp:161:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  161 |  fscanf(fp, "%i", &npls);
+      |  ~~~~~~^~~~~~~~~~~~~~~~~
+CompStuff.cpp:162:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  162 |  fscanf(fp, "%i", &nacts1);
+      |  ~~~~~~^~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:163:8: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  163 |  fscanf(fp, "%i", &nacts2);
+      |  ~~~~~~^~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:168:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  168 |    fscanf(fp, "%lf %lf", &(Payoffs[j][i].r1), &(Payoffs[j][i].r2));
+      |    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp: In function ‘void writeMaximinLog(int*, double***)’:
+CompStuff.cpp:23:44: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1001 [-Wformat-overflow=]
+   23 |     sprintf(fname, "../results/maximinVals/%s", game);
+      |                                            ^~   ~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 24 and 1047 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp: In function ‘double NB(int)’:
+CompStuff.cpp:145:34: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1012 [-Wformat-overflow=]
+  145 |   sprintf(filename, "../../games/%s.txt", theGame);
+      |                                  ^~       ~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 17 and 1040 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:143:34: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1012 [-Wformat-overflow=]
+  143 |   sprintf(filename, "../../games/%s_%i.txt", theGame, index);
+      |                                  ^~          ~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 19 and 1052 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:152:32: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1015 [-Wformat-overflow=]
+  152 |    sprintf(filename, "../games/%s.txt", theGame);
+      |                                ^~       ~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 14 and 1037 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:150:32: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1015 [-Wformat-overflow=]
+  150 |    sprintf(filename, "../games/%s_%i.txt", theGame, index);
+      |                                ^~          ~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 16 and 1049 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CompStuff.cpp:188:34: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1009 [-Wformat-overflow=]
+  188 |     sprintf(fnm, "../results/NBS/%s", theGame);
+      |                                  ^~   ~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from CompStuff.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 16 and 1039 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H Rndm.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H strategyPair.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H REexpert.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H jefe.cpp -c 
+jefe.cpp: In constructor ‘jefe::jefe(const char*, int, int*, double***, double, char*)’:
+jefe.cpp:71:39: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1009 [-Wformat-overflow=]
+   71 |         sprintf(nmbr, "../experts/log_%s.txt", game);
+      |                                       ^~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from jefe.h:4,
+                 from jefe.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 20 and 1043 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H jefe++.cpp -c 
+jefe++.cpp: In constructor ‘jefe_plus::jefe_plus(const char*, int, int*, double***, double, char*)’:
+jefe++.cpp:107:39: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1009 [-Wformat-overflow=]
+  107 |         sprintf(nmbr, "../experts/log_%s.txt", game);
+      |                                       ^~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from jefe++.h:4,
+                 from jefe++.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 20 and 1043 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H Godfather.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Bully.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H WoLF.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H QLearner.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H playStrat.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H filePlayer.cpp -c 
+filePlayer.cpp: In member function ‘virtual int filePlayer::move()’:
+filePlayer.cpp:26:11: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+   26 |     fscanf(fp, "%lf %lf\n", &(p[0]), &(p[1]));
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H MQubed.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Manipulator.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H CJAL.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H fp.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Exp3_act.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H gigawolf.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H HedgeWMA.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H SAlg.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H sfp.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H DeepQ.cpp -c 
+DeepQ.cpp: In constructor ‘DeepQ::DeepQ(int, int*, double***, int, int, int)’:
+DeepQ.cpp:24:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+   24 |     system(cmndr);
+      |     ~~~~~~^~~~~~~
+DeepQ.cpp: In member function ‘void DeepQ::sendGame(int, double***, int*)’:
+DeepQ.cpp:77:26: warning: ‘%lf’ directive writing between 3 and 317 bytes into a region of size between 1 and 1024 [-Wformat-overflow=]
+   77 |     sprintf(gameInfo, "%s%lf\n", gameInfo, M[1][row][col]);
+      |                          ^~~
+DeepQ.cpp:77:23: note: assuming directive output of 8 bytes
+   77 |     sprintf(gameInfo, "%s%lf\n", gameInfo, M[1][row][col]);
+      |                       ^~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from DeepQ.h:4,
+                 from DeepQ.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 5 and 1342 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DeepQ.cpp:69:26: warning: ‘%lf’ directive writing between 3 and 317 bytes into a region of size between 1 and 1024 [-Wformat-overflow=]
+   69 |     sprintf(gameInfo, "%s%lf\n", gameInfo, M[0][row][col]);
+      |                          ^~~
+DeepQ.cpp:69:23: note: assuming directive output of 8 bytes
+   69 |     sprintf(gameInfo, "%s%lf\n", gameInfo, M[0][row][col]);
+      |                       ^~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6493,
+                 from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from defs.h:4,
+                 from DeepQ.h:4,
+                 from DeepQ.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:34: note: ‘__builtin___sprintf_chk’ output between 5 and 1342 bytes into a destination of size 1024
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H Pavlov.cpp -c 
+g++  -O -g -std=c++11 -DMYSOCKET_H Memory1.cpp -c 
+Memory1.cpp: In constructor ‘Memory1::Memory1(int*, int, char*)’:
+Memory1.cpp:26:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+   26 |         system(sysLlamado);
+      |         ~~~~~~^~~~~~~~~~~~
+Memory1.cpp:33:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+   33 |         fscanf(fp, "%lf", &(genoType[i]));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H Memory2.cpp -c 
+Memory2.cpp: In constructor ‘Memory2::Memory2(int*, int, char*)’:
+Memory2.cpp:24:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+   24 |         system(sysLlamado);
+      |         ~~~~~~^~~~~~~~~~~~
+Memory2.cpp:31:15: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+   31 |         fscanf(fp, "%lf", &(genoType[i]));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++  -O -g -std=c++11 -DMYSOCKET_H -o game   main.o iModel.o minimaxLog.o Mala.o expertLearner.o a.o Exp3.o eee.o ucb.o Rmax.o MySocket.o Littman.o CompStuff.o Rndm.o strategyPair.o REexpert.o jefe.o jefe++.o Godfather.o Bully.o WoLF.o QLearner.o playStrat.o filePlayer.o MQubed.o Manipulator.o CJAL.o fp.o Exp3_act.o gigawolf.o HedgeWMA.o SAlg.o sfp.o DeepQ.o Pavlov.o Memory1.o Memory2.o 

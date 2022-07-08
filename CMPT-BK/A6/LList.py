@@ -11,13 +11,6 @@
 # Synopsis:
 #     Defines the List ADT
 #  
-
-from ast import walk
-from errno import ESTALE
-import ssl
-from time import sleep
-
-
 class node(object):
     """ A version of the node class with **public** attributes.
         This makes the use of node objects a bit more convenient for 

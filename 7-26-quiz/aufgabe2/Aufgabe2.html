@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Aufgabe 2</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Aufgabe 2</h1>
+</header>
+<h2 id="aufgabe-2-objektorientierte-programmierung-25-punkte">Aufgabe 2: Objektorientierte Programmierung [25 Punkte]</h2>
+<p>Sie wollen ein Programm erstellen, um Geocaches zu verwalten. Geocaches sind eine Art von moderner Schnitzeljagd.</p>
+<p>Für mehr Informationen siehe den Wikipedia-Artikel dazu: <a href="https://de.wikipedia.org/wiki/Geocaching" class="uri">https://de.wikipedia.org/wiki/Geocaching</a></p>
+<p>Ihr Programm soll dazu aus zwei Klassen bestehen:</p>
+<ul>
+<li><code>Station</code>: Diese Klasse enthält eine Geokoordinate bestehend aus Längen- und Breitengrad</li>
+<li><code>Geocache</code>: Diese Klasse beschreibt einen einzelnen Geocache. Ein Geocache kann aus einer oder mehreren Geokoordinaten bestehen. Bei mehreren Koordinaten besitzt ein Geocache mehrere Stationen, die der Reihe nach abgelaufen werden müssen. Wenn ein Geocache mehr als eine Koordinate hat, ist dies ein <em>Multi</em>.</li>
+</ul>
+<p>Das UML-Klassendiagramm liegt als zusätzliche Datei in diesem Ordner. Nicht über das grüne C neben dem Klassennamen wundern. Ich konnte hier aus technischen Gründen nicht yEd verwenden.</p>
+<h2 id="die-klasse-station-12p">Die Klasse <code>Station</code> [12P]</h2>
+<p>Um den Geocache zu verorten, entwerfen Sie zuerst eine Klasse <code>Station</code>.</p>
+<ul>
+<li>Die Felder <code>lat</code> (Breitengrad) und <code>lon</code> (Längengrad) speichern die jeweilige Koordinate</li>
+<li>Zusätzlich soll der Koordinate ein Name gegeben werden können. Dafür ist das Feld <code>name</code> da.</li>
+</ul>
+<p>Die Klasse verfügt über zwei Konstruktoren:</p>
+<ul>
+<li>Der Standardkonstruktor verortet die Koordinate bei <code>(0, 0)</code> und setzt den Namen auf <code>Null Island</code> (<a href="https://de.wikipedia.org/wiki/Null_Island" class="uri">https://de.wikipedia.org/wiki/Null_Island</a>).</li>
+<li>Der zweite Konstruktor akzeptiert <code>name</code>, <code>lat</code> und <code>lon</code> und weist diese Werte direkt den Feldern zu. Dieser Konstruktor soll eine Ausnahme (<code>std::runtime_error</code>) auslösen, wenn die Koordinaten ungültig sind. <code>lat</code> muss im Bereich <code>[-90, 90]</code> liegen und <code>lon</code> im Bereich <code>[-180, 180]</code>.</li>
+</ul>
+<p>Die privaten Felder verfolgen über die folgenden Getter/Setter:</p>
+<ul>
+<li><code>name</code> hat Getter und Setter</li>
+<li><code>lat</code> hat einen Getter</li>
+<li><code>lon</code> hat einen Getter</li>
+</ul>
+<p>Abschließend soll noch von <code>calc_distance</code> die Distanz zwischen zwei Geokoordinaten berechnet und zurückgegeben werde. Da die Erde keine Scheibe ist, ist die Berechnung von Distanzen kompliziert. Ein Freund hat Ihnen die Berechnung netterweise programmiert. Diese befindet sich in <code>distance.h</code>. Rufen Sie diese einfach mit den richtigen Parametern auf.</p>
+<h2 id="die-klasse-geocache-9p">Die Klasse <code>Geocache</code> [9P]</h2>
+<p>Ein Geocache wird über dessen Koordinaten (<code>stations</code>), die Geländewertung (<code>terrain</code>) und die Größe (<code>size</code>) spezifiziert.</p>
+<ul>
+<li>Der <code>std::vector</code> <code>stations</code> enthält die Koordinaten bzw. Stationen des Geocaches. Diese Stationen sind in der Reihenfolge angeordnet, wie sie angelaufen werden müssen.</li>
+<li><code>terrain</code> beschreibt numerisch die Schwierigkeit des Terrains, um den Cache zu erreichen</li>
+<li><code>size</code> beschreibt numerisch die Größe des Geocaches (also des Behälters, der zu suchen ist)</li>
+</ul>
+<p>Die Klasse verfügt über einen Konstruktor. Dieser akzeptiert <code>terrain</code> und <code>size</code>. Diese Werte haben eine untere Grenze von 0 und eine obere Grenze: Wenn <code>terrain</code> größer als 5 ist, wird es auf 5 gesetzt. Wenn <code>size</code> größer als 3 ist, wird es auf 3 gesetzt. Anschließend werden die Werte den passenden Feldern der Klasse zugewiesen.</p>
+<p>Zudem verfügt die Klasse über drei Methoden:</p>
+<ul>
+<li>Die Methode <code>calc_difficulty</code> gibt den Schwierigkeitsgrad zurück. Dieser wird nach folgender Formel berechnet: <code>size * 4 - terrain</code>.</li>
+<li>Mit <code>is_multi</code> kann ermittelt werden, ob der Geocache ein sogenannter <em>Multi</em> ist. Ein Geocache ist ein Multi, wenn er über mindestens zwei Koordinaten verfügt.</li>
+<li>Mit <code>calc_length</code> wird die aufsummierte Distanz zwischen allen Stationen bzw. Koordinaten ermittelt.</li>
+</ul>
+<h2 id="testen-in-main-4p">Testen (in <code>main</code>) [4P]</h2>
+<p>Erzeugen Sie eine Instanz von <code>Geocache</code> mit <code>terrain</code> 4 und <code>size</code> 2.</p>
+<p>Fügen Sie dann der Klasse die folgenden zwei Wegpunkte (<code>Station</code>) hinzu:</p>
+<ul>
+<li><code>A</code> bei <code>(U, V)</code></li>
+<li><code>B</code> bei <code>(X, Y)</code></li>
+</ul>
+<p>Die Werte sind folgendermaßen:</p>
+<ul>
+<li><code>A</code>: Ihr Vorname</li>
+<li><code>B</code>: Ihr Nachname</li>
+<li><code>U</code>: Zweite Ziffer Ihrer Matrikelnummer</li>
+<li><code>V</code>: Dritte Ziffer Ihrer Matrikelnummer</li>
+<li><code>X</code>: Vierte Ziffer Ihrer Matrikelnummer</li>
+<li><code>Y</code>: Fünfte Ziffer Ihrer Matrikelnummer</li>
+</ul>
+<p>Geben Sie abschließend den Schwierigkeitsgrad auf der Konsole aus.</p>
+</body>
+</html>

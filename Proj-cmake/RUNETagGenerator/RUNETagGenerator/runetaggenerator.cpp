@@ -16,7 +16,7 @@
 
 #include <MarkPoint.h>
 
-#include "coding.h"
+// #include "coding.h"
 
 
 #define M_PI 3.141592

@@ -1,0 +1,114 @@
+{
+	"BUILD_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/RUNETagGenerator_autogen",
+	"CMAKE_BINARY_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator",
+	"HEADERS" : 
+	[
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/MarkPoint.h",
+			"Mu",
+			"EWIEGA46WW/moc_MarkPoint.cpp"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/MarkPointSet.h",
+			"Mu",
+			"EWIEGA46WW/moc_MarkPointSet.cpp"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/TagCode.h",
+			"Mu",
+			"EWIEGA46WW/moc_TagCode.cpp"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/runetaggenerator.h",
+			"Mu",
+			"EWIEGA46WW/moc_runetaggenerator.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/RUNETagGenerator_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/RUNETagGenerator_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build",
+		"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator",
+		"/usr/local/include/opencv",
+		"/home/gouser/some-coding-assignmen/Proj-cmake/dist/include",
+		"/home/gouser/anaconda3/include/qt",
+		"/home/gouser/anaconda3/include/qt/QtWidgets",
+		"/home/gouser/anaconda3/include/qt/QtGui",
+		"/home/gouser/anaconda3/include/qt/QtCore",
+		"/home/gouser/anaconda3/mkspecs/linux-g++",
+		"/home/gouser/anaconda3/include/qt/QtPrintSupport",
+		"/usr/local/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/RUNETagGenerator_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 1,
+	"PARSE_CACHE_FILE" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/CMakeFiles/RUNETagGenerator_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/gouser/anaconda3/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/build/CMakeFiles/RUNETagGenerator_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/MarkPoint.cpp",
+			"Mu"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/MarkPointSet.cpp",
+			"Mu"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/TagCode.cpp",
+			"Mu"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/main.cpp",
+			"Mu"
+		],
+		[
+			"/home/gouser/some-coding-assignmen/Proj-cmake/RUNETagGenerator/RUNETagGenerator/runetaggenerator.cpp",
+			"Mu"
+		]
+	],
+	"VERBOSITY" : 0
+}
